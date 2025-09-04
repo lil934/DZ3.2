@@ -64,13 +64,13 @@ public class Main {
 //        б) количество предметов, по которым были получены только оценки "5" и "4";
 //        в) количество двоек по каждому предмету.
 
-        Scanner sc = new Scanner(System.in);
-        int without2 = 0;
+       Scanner sc = new Scanner(System.in);
+  /*       int without2 = 0;
         int countSubject1 = 0, countSubject2 = 0, countSubject3 = 0;
         int x = 0, sum = 0, y = 0, z = 0;
 
 
-        for (int student = 1; student <= 4; student++) {
+        for (int student = 1; student <= 15; student++) {
             System.out.println(" Студент № " + student + " : ");
             int subject1 = sc.nextInt();
             if (subject1 == 2) {
@@ -117,7 +117,22 @@ public class Main {
         System.out.println("Количество двоек по каждому предмету : " + "по первому = " + countSubject1 + ", по второму = " +
                 countSubject2 + ", по третьему = " + countSubject3);
         System.out.println("количество предметов по которым были получены только оценки 5 и 4: " + sum);
+        */
 
 
+
+
+//Шахматная доска N×M Ввод: N, M. Вывести: прямоугольник из символов # и .
+// так, чтобы клетки чередовались как на шахматной доске (левый верхний — #).
+// Подсказка: печатать ((i + j) % 2 == 0 ? '#' : '.').
+
+        int N = sc.nextInt();
+        int M = sc.nextInt();
+        for (int i = 0; i < N; i++) {
+            for (int j = 0; j < M; j++) {
+                System.out.print((i + j) % 2 == 0 ? '#' : '.');
+            }
+            System.out.println("");
+        }
     }
 }
